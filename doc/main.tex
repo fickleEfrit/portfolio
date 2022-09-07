@@ -1,0 +1,180 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Jonah Fritz}} &\href{https://jonah.tech}{https://jonah.tech} \cdot \href{mailto:}{jonahfritz@outlook.com} \cdot \href{https://www.linkedin.com/in/jonah-fritz}{linkedin.com/in/jonah-fritz}\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rochester Institute of Technology}{Rochester, NY}
+      {B.S. - Software Engineering;  GPA: 3.62}{Aug 2017 - May 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Minor:} Philosophy \textbf{Honors:} Magna Cum Laude}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills and Tools}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Java, Python, JavaScript, C\#, SQL, Bicep}
+	\resumeSubItem{Frameworks and Libraries}{~~~~~~~~React, Spring Boot, AngularJS, Expo, Django, Guice, React Native, .NET}
+	\resumeSubItem{Platforms and Databases}{~~~~~~~AWS, Azure, Heroku, IBM Cloud, PostgreSQL, Cosmos DB, MongoDB}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Microsoft}{Redmond, WA}
+    {Software Engineer - MyWorkspace}{Jun 2022 - Present}
+    \resumeItemListStart
+        \resumeItemWithoutTitle{}{Developed software using C\#, .NET 6, and React}
+        \resumeItemWithoutTitle{}{Implemented automated workflow for deploying new firewalls to customer Azure subscriptions}
+        \resumeItemWithoutTitle{}{Automated creation of DNS records for firewall hub networks end-to-end}
+        \resumeItemWithoutTitle{}{Modified message-based batch job orchestrator to deploy containers behind existing subnet for enhanced security using Bicep templates}
+      \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{Microsoft}{Redmond, WA}
+		{Software Engineer Intern - High Risk Environment}{May 2021 - Aug 2021}
+		\resumeItemListStart
+            \resumeItemWithoutTitle{}{Built from scratch network monitoring tool for devices in air gapped data centers called Panopticon -- tool was promoted to production following internship}
+            \resumeItemWithoutTitle{}{Used Django and Django REST Framework to create API to retrieve and modify device status and historical configuration data}
+            \resumeItemWithoutTitle{}{Used React, Fluent, and Coherence to introduce frontend for network engineers to quickly and easily digest relevant device status information}
+            \resumeItemWithoutTitle{}{Developed polling engine to periodically get information from networked devices using ICMP and SNMP commands}
+		\resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{Amazon}{Seattle, WA}
+		{Software Development Engineer Intern - Alexa AI}{Jan 2021 - Apr 2021}
+		\resumeItemListStart
+		    \resumeItemWithoutTitle{}{Proposed, designed, and implemented self-service Java CLI to facilitate customer experience for adding personalization features to Alexa}
+		    \resumeItemWithoutTitle{}{Updated tier 1 service vital to Alexa speech understanding workflow to use S3 for storing configuration information}
+		\resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{IBM}{Poughkeepsie, NY}
+		{Software Developer Intern - z/OS Compiler Performance}{Jun 2020 - Aug 2020}
+		\resumeItemListStart
+            \resumeItemWithoutTitle{}{Automated process for configuring mainframes and running C++/Java compiler benchmarks using
+Python and shell scripting to tie together Jenkins, Ansible, and Slack API}
+		\resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{MarginEdge}{Fairfax, VA}
+		{Software Engineer Intern}{May 2019 - Jun 2020}
+		\resumeItemListStart
+            \resumeItemWithoutTitle{}
+              {Substantially contributed to every layer of a Spring Boot webapp using Java, JavaScript, and SQL}
+            \resumeItemWithoutTitle{}
+              {Implemented new features including integrations with external point of sale and accounting
+systems and improvements to electronic invoice processing}
+		\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{\href{https://apps.apple.com/us/app/words-puzzle/id1606643323}{Words Plus} (\(Expo, React Native\))}{Mobile app adaptation of Wordle. Features unlimited replays, adjustable word length, and teaches players word definitions upon loss. Published on App Store.}
+\vspace{2pt}
+\resumeSubItem{Insomniax (\(Python, JavaScript, React, MongoDB, Heroku\))}{Webapp funded by the Department of Veterans Affairs as an Innovation App following hackathon win. Compares a user's standardized burnout score with user's sleep based on data from wearable device.}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+\vspace{-5pt}
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+        \resumeSubItem{Computer Science House}{A living-learning community filled with RIT students passionate about computing. Every year, each active member
+must submit a major computing project for approval. Members collaborate, share knowledge, and grow
+their skills by creating projects and maintaining house service infrastructure.
+}
+        \vspace{2pt}
+        \vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+        \resumeSubItem{MIT Hacking Medicine}{Hackathon for creating solutions to improve health and wellness. Won the Department of Veterans Affairs award for concept using wearables and machine learning to
+improve sleep.}
+\resumeSubHeadingListEnd
+
+\end{document}
